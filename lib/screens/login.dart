@@ -20,13 +20,18 @@ class _LoginScreenState extends State<LoginScreen> {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 100, 0, 0),
-              child: Text(
-                "Sign In",
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              child: Center(
+                child: Text(
+                  "Sign In",
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
               ),
             ),
+            SizedBox(height: 50),
             _textField(UIWidget.email, false),
+            SizedBox(height: 20),
             _textField(UIWidget.password, true),
+            SizedBox(height: 20),
             _keepLogin,
             _loginButton,
           ],
