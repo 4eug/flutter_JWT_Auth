@@ -11,9 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'JWT Authentication',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      debugShowCheckedModeBanner: false,
       home: LoginScreen(),
     );
   }
